@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp
+iostream
+-
+string
+-
+
+/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/main.cpp
+iostream
+-
+interpreter/shell.cpp
+/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp
+
