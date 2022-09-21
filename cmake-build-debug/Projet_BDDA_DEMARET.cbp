@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/db_params.h">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/functions.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
