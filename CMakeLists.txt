@@ -3,4 +3,4 @@ project(Projet_BDDA_DEMARET)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Projet_BDDA_DEMARET CODE/main.cpp CODE/interpreter/shell.cpp)
+add_executable(Projet_BDDA_DEMARET CODE/main.cpp CODE/interpreter/shell.cpp CODE/string_converter/case_modifier.cpp CODE/interpreter/functions.h CODE/string_converter/split.cpp)

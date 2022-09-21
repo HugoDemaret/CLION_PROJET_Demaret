@@ -196,6 +196,60 @@ CODE/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.s
 .PHONY : CODE/main.cpp.s
 
+CODE/string_converter/case_modifier.o: CODE/string_converter/case_modifier.cpp.o
+
+.PHONY : CODE/string_converter/case_modifier.o
+
+# target to build an object file
+CODE/string_converter/case_modifier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o
+.PHONY : CODE/string_converter/case_modifier.cpp.o
+
+CODE/string_converter/case_modifier.i: CODE/string_converter/case_modifier.cpp.i
+
+.PHONY : CODE/string_converter/case_modifier.i
+
+# target to preprocess a source file
+CODE/string_converter/case_modifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.i
+.PHONY : CODE/string_converter/case_modifier.cpp.i
+
+CODE/string_converter/case_modifier.s: CODE/string_converter/case_modifier.cpp.s
+
+.PHONY : CODE/string_converter/case_modifier.s
+
+# target to generate assembly for a file
+CODE/string_converter/case_modifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.s
+.PHONY : CODE/string_converter/case_modifier.cpp.s
+
+CODE/string_converter/split.o: CODE/string_converter/split.cpp.o
+
+.PHONY : CODE/string_converter/split.o
+
+# target to build an object file
+CODE/string_converter/split.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o
+.PHONY : CODE/string_converter/split.cpp.o
+
+CODE/string_converter/split.i: CODE/string_converter/split.cpp.i
+
+.PHONY : CODE/string_converter/split.i
+
+# target to preprocess a source file
+CODE/string_converter/split.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.i
+.PHONY : CODE/string_converter/split.cpp.i
+
+CODE/string_converter/split.s: CODE/string_converter/split.cpp.s
+
+.PHONY : CODE/string_converter/split.s
+
+# target to generate assembly for a file
+CODE/string_converter/split.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.s
+.PHONY : CODE/string_converter/split.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,6 +265,12 @@ help:
 	@echo "... CODE/main.o"
 	@echo "... CODE/main.i"
 	@echo "... CODE/main.s"
+	@echo "... CODE/string_converter/case_modifier.o"
+	@echo "... CODE/string_converter/case_modifier.i"
+	@echo "... CODE/string_converter/case_modifier.s"
+	@echo "... CODE/string_converter/split.o"
+	@echo "... CODE/string_converter/split.i"
+	@echo "... CODE/string_converter/split.s"
 .PHONY : help
 
 
