@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o"

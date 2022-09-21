@@ -8,10 +8,12 @@
 
 //returns a given string in uppercase
 std::string to_upper(std::string str){
-    return std::transform(str.begin(), str.end(), str.begin, ::toupper);
+    std::transform(str.begin(), str.end(), str.begin(), ::toupper);
+    return str;
 }
 
 //returns a given string in lowercase
 std::string to_lower(std::string str){
-    return std::transform(str.begin(), str.end(), str.begin, ::tolower);
+    std::transform(str.begin(), str.end(), str.begin(), ::tolower);
+    return str;
 }

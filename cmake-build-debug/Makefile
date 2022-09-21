@@ -142,6 +142,33 @@ Projet_BDDA_DEMARET/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/build
 .PHONY : Projet_BDDA_DEMARET/fast
 
+CODE/interpreter/interpreter.o: CODE/interpreter/interpreter.cpp.o
+
+.PHONY : CODE/interpreter/interpreter.o
+
+# target to build an object file
+CODE/interpreter/interpreter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o
+.PHONY : CODE/interpreter/interpreter.cpp.o
+
+CODE/interpreter/interpreter.i: CODE/interpreter/interpreter.cpp.i
+
+.PHONY : CODE/interpreter/interpreter.i
+
+# target to preprocess a source file
+CODE/interpreter/interpreter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.i
+.PHONY : CODE/interpreter/interpreter.cpp.i
+
+CODE/interpreter/interpreter.s: CODE/interpreter/interpreter.cpp.s
+
+.PHONY : CODE/interpreter/interpreter.s
+
+# target to generate assembly for a file
+CODE/interpreter/interpreter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.s
+.PHONY : CODE/interpreter/interpreter.cpp.s
+
 CODE/interpreter/shell.o: CODE/interpreter/shell.cpp.o
 
 .PHONY : CODE/interpreter/shell.o
@@ -259,6 +286,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Projet_BDDA_DEMARET"
+	@echo "... CODE/interpreter/interpreter.o"
+	@echo "... CODE/interpreter/interpreter.i"
+	@echo "... CODE/interpreter/interpreter.s"
 	@echo "... CODE/interpreter/shell.o"
 	@echo "... CODE/interpreter/shell.i"
 	@echo "... CODE/interpreter/shell.s"

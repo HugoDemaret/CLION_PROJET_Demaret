@@ -85,6 +85,9 @@
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/functions.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
+		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
@@ -95,6 +98,9 @@
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
+		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/string_modifier.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CMakeLists.txt">

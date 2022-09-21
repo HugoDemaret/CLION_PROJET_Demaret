@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/functions.h
+
 /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp
 iostream
 -
 string
 -
-
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/main.cpp
-iostream
+vector
 -
-interpreter/shell.cpp
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp
+../string_converter/string_modifier.h
+/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/string_modifier.h
+functions.h
+/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/functions.h
+
+/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/string_modifier.h
 

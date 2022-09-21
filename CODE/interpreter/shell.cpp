@@ -4,8 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../string_converter/case_modifier.cpp"
-#include "../string_converter/split.cpp"
+#include "../string_converter/string_modifier.h"
 #include "functions.h"
 
 void shell_runner(void){
@@ -13,6 +12,7 @@ void shell_runner(void){
     while (quit) {
         quit = shell_waiter();
     }
+    std::cout << "Quitting... \nGoodbye !" << std::endl;
 }
 
 
@@ -36,6 +36,7 @@ bool shell_waiter(void){
         state = !state;
     } else {
         //todo give command to interpreter
+        std::cout << "else" << std::endl;
     }
     return state;
 }
