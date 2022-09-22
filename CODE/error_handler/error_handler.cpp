@@ -26,7 +26,7 @@ void err_message(int8_t err_code){
             std::cout << "Error : " << err_code << " To be attributed" << std::endl;
             break;
         case 4:
-            std::cout << "Error : " << err_code << " To be attributed" << std::endl;
+            std::cout << "Error : " << err_code << " File already exists!" << std::endl;
             break;
         //from 10 to 19 : error with saving procedure (no file, path not found etc)
         //From 20 to 29 : error with disk manager

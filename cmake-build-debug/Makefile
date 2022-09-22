@@ -67,10 +67,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET
+CMAKE_SOURCE_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/CMakeFiles /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,60 @@ Projet_BDDA_DEMARET: cmake_check_build_system
 Projet_BDDA_DEMARET/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/build
 .PHONY : Projet_BDDA_DEMARET/fast
+
+CODE/disk_manager/disk_manager.o: CODE/disk_manager/disk_manager.cpp.o
+
+.PHONY : CODE/disk_manager/disk_manager.o
+
+# target to build an object file
+CODE/disk_manager/disk_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.o
+.PHONY : CODE/disk_manager/disk_manager.cpp.o
+
+CODE/disk_manager/disk_manager.i: CODE/disk_manager/disk_manager.cpp.i
+
+.PHONY : CODE/disk_manager/disk_manager.i
+
+# target to preprocess a source file
+CODE/disk_manager/disk_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.i
+.PHONY : CODE/disk_manager/disk_manager.cpp.i
+
+CODE/disk_manager/disk_manager.s: CODE/disk_manager/disk_manager.cpp.s
+
+.PHONY : CODE/disk_manager/disk_manager.s
+
+# target to generate assembly for a file
+CODE/disk_manager/disk_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.s
+.PHONY : CODE/disk_manager/disk_manager.cpp.s
+
+CODE/disk_manager/file_manager.o: CODE/disk_manager/file_manager.cpp.o
+
+.PHONY : CODE/disk_manager/file_manager.o
+
+# target to build an object file
+CODE/disk_manager/file_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o
+.PHONY : CODE/disk_manager/file_manager.cpp.o
+
+CODE/disk_manager/file_manager.i: CODE/disk_manager/file_manager.cpp.i
+
+.PHONY : CODE/disk_manager/file_manager.i
+
+# target to preprocess a source file
+CODE/disk_manager/file_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.i
+.PHONY : CODE/disk_manager/file_manager.cpp.i
+
+CODE/disk_manager/file_manager.s: CODE/disk_manager/file_manager.cpp.s
+
+.PHONY : CODE/disk_manager/file_manager.s
+
+# target to generate assembly for a file
+CODE/disk_manager/file_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.s
+.PHONY : CODE/disk_manager/file_manager.cpp.s
 
 CODE/error_handler/error_handler.o: CODE/error_handler/error_handler.cpp.o
 
@@ -313,6 +367,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Projet_BDDA_DEMARET"
+	@echo "... CODE/disk_manager/disk_manager.o"
+	@echo "... CODE/disk_manager/disk_manager.i"
+	@echo "... CODE/disk_manager/disk_manager.s"
+	@echo "... CODE/disk_manager/file_manager.o"
+	@echo "... CODE/disk_manager/file_manager.i"
+	@echo "... CODE/disk_manager/file_manager.s"
 	@echo "... CODE/error_handler/error_handler.o"
 	@echo "... CODE/error_handler/error_handler.i"
 	@echo "... CODE/error_handler/error_handler.s"

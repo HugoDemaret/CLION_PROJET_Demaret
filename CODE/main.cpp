@@ -8,7 +8,7 @@
 
 
 //CREATES NEW DATABASE "main_db"
-extern db_params main_db;
+db_params main_db;
 
 
 

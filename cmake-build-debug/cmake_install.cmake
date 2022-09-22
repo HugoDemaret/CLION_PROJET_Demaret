@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET
+# Install script for directory: /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
