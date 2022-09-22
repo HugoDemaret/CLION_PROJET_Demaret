@@ -17,6 +17,8 @@ bool exists_file(const std::string& name){
     return (stat (name.c_str(), &buffer) == 0);
 }
 
+
+//creates a files if it doesn't exists (return success : 0), return an error otherwise (code 4)
 u_int8_t create_file(std::string str){
     if (!exists_file(str)){
         return 4;
@@ -35,10 +37,13 @@ std::fstream get_file(std::string str){
     std::fstream file(str, std::ios::binary);
 }
 
-page_id alloc_page(){
-    return page_id none;
+
+//reads page with page_id, puts page into the buffer
+void read_page(page_id page, std::vector<char>& buffer){
+    if (exists_file("F" + std::to_string(page.file_id) + ".bdda")) {
+        std::fstream file("F" + std::to_string(page.file_id) + ".bdda", std::ios::binary);
+        buffer = std::vector(std::istreambuf_iterator<char>(file), {});
+    }
+    err_message(2);
 }
 
-void read_page(page_id page, std::vector<std::string> buffer){
-
-}
