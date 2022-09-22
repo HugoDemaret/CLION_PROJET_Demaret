@@ -15,6 +15,7 @@ void err_message(int8_t err_code){
                 std::cout << "Debug mode : " << err_code << " Command worked properly!" << std::endl;
             }
             break;
+        //from 1 to 9 : problem or finding data (directory, file...)
         case 1:
             std::cout << "Error : " << err_code << " DataBase directory could not be found!" << std::endl;
             break;
@@ -27,6 +28,24 @@ void err_message(int8_t err_code){
         case 4:
             std::cout << "Error : " << err_code << " To be attributed" << std::endl;
             break;
+        //from 10 to 19 : error with saving procedure (no file, path not found etc)
+        //From 20 to 29 : error with disk manager
+        case 20:
+            std::cout << "Error : " << err_code << " To be attributed" << std::endl;
+            break;
+        case 21:
+            std::cout << "Error : " << err_code << " To be attributed" << std::endl;
+            break;
+        case 22:
+            std::cout << "Error : " << err_code << " To be attributed" << std::endl;
+            break;
+        case 23:
+            std::cout << "Error : " << err_code << " To be attributed" << std::endl;
+            break;
+        case 24:
+            std::cout << "Error : " << err_code << " To be attributed" << std::endl;
+            break;
+        //from 30 to 39 : error with buffer manager
         default:
             std::cout << "Error : " << err_code << " Unknown Error Code" << std::endl;
             break;
