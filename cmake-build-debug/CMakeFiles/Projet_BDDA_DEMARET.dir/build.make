@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hugodemaret/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/hugodemaret/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET
+CMAKE_SOURCE_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Projet_BDDA_DEMARET.dir/depend.make
@@ -78,68 +78,81 @@ include CMakeFiles/Projet_BDDA_DEMARET.dir/flags.make
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o: CMakeFiles/Projet_BDDA_DEMARET.dir/flags.make
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o: ../CODE/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o -c /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o -c /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/main.cpp
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/main.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/main.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.i
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/main.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/main.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.s
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o: CMakeFiles/Projet_BDDA_DEMARET.dir/flags.make
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o: ../CODE/interpreter/shell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o -c /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o -c /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.i
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.s
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o: CMakeFiles/Projet_BDDA_DEMARET.dir/flags.make
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o: ../CODE/string_converter/case_modifier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o -c /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/case_modifier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o -c /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/case_modifier.cpp
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/case_modifier.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/case_modifier.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.i
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/case_modifier.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/case_modifier.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.s
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o: CMakeFiles/Projet_BDDA_DEMARET.dir/flags.make
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o: ../CODE/string_converter/split.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o -c /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o -c /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.i
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.s
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o: CMakeFiles/Projet_BDDA_DEMARET.dir/flags.make
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o: ../CODE/interpreter/interpreter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o -c /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o -c /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.i
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.s
+
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o: CMakeFiles/Projet_BDDA_DEMARET.dir/flags.make
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o: ../CODE/error_handler/error_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o -c /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/error_handler/error_handler.cpp
+
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/error_handler/error_handler.cpp > CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.i
+
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/error_handler/error_handler.cpp -o CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.s
 
 # Object files for target Projet_BDDA_DEMARET
 Projet_BDDA_DEMARET_OBJECTS = \
@@ -147,7 +160,8 @@ Projet_BDDA_DEMARET_OBJECTS = \
 "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o" \
 "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o" \
 "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o" \
-"CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o"
+"CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o" \
+"CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o"
 
 # External object files for target Projet_BDDA_DEMARET
 Projet_BDDA_DEMARET_EXTERNAL_OBJECTS =
@@ -157,9 +171,10 @@ Projet_BDDA_DEMARET: CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.c
 Projet_BDDA_DEMARET: CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o
 Projet_BDDA_DEMARET: CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o
 Projet_BDDA_DEMARET: CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/interpreter.cpp.o
+Projet_BDDA_DEMARET: CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o
 Projet_BDDA_DEMARET: CMakeFiles/Projet_BDDA_DEMARET.dir/build.make
 Projet_BDDA_DEMARET: CMakeFiles/Projet_BDDA_DEMARET.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Projet_BDDA_DEMARET"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Projet_BDDA_DEMARET"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Projet_BDDA_DEMARET.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -172,6 +187,6 @@ CMakeFiles/Projet_BDDA_DEMARET.dir/clean:
 .PHONY : CMakeFiles/Projet_BDDA_DEMARET.dir/clean
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/depend:
-	cd /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles/Projet_BDDA_DEMARET.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug /Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles/Projet_BDDA_DEMARET.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Projet_BDDA_DEMARET.dir/depend
 

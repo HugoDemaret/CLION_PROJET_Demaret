@@ -7,7 +7,7 @@ CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o: ../CODE/interpr
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o: ../CODE/interpreter/shell.cpp
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/interpreter/shell.cpp.o: ../CODE/string_converter/string_modifier.h
 
-CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o: ../CODE/db_params.h
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o: ../CODE/disk_manager/db_params.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o: ../CODE/interpreter/functions.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o: ../CODE/main.cpp
 

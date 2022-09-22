@@ -6,17 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/db_params.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/disk_manager/db_params.h
 
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/functions.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/functions.h
 
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp
+iostream
+-
+string
+-
+vector
+-
+../string_converter/string_modifier.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/string_modifier.h
+functions.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/functions.h
 
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/main.cpp
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/main.cpp
 iostream
 -
 interpreter/functions.h
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/functions.h
-db_params.h
-/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/db_params.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/interpreter/functions.h
+disk_manager/db_params.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/disk_manager/db_params.h
+
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp
+vector
+-
+string
+-
+
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/Projet_BDDA_DEMARET/CODE/string_converter/string_modifier.h
 

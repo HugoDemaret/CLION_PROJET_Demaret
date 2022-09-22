@@ -1,17 +1,18 @@
 #include <iostream>
 #include "interpreter/functions.h"
-#include "db_params.h"
+#include "disk_manager/db_params.h"
 
 #define PAGE_SIZE 4096
 #define DB_PATH "../DB/"
 #define MAX_PAGES_PER_FILE 4
+
 
 //CREATES NEW DATABASE "main_db"
 db_params main_db;
 
 
 
-int main(void){
+int main(int argc, char **argv){
     //sets the parameters
     main_db.db_paths = DB_PATH;
     main_db.page_size = PAGE_SIZE;

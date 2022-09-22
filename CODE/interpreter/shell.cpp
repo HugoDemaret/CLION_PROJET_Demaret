@@ -33,10 +33,12 @@ bool shell_waiter(void){
 
 
     if (to_lower(command_vec[0]) == "quit"){
+        //quit will be implemented in the interpreter when developing it
         state = !state;
     } else {
         //todo give command to interpreter
         std::cout << "else" << std::endl;
+        interpreter(command_vec);
     }
     return state;
 }
