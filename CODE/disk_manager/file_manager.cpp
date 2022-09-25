@@ -11,7 +11,6 @@
 #include "../error_handler/error.h"
 #include "db_params.h"
 #include <filesystem>
-#include "file_list.h"
 
 
 //returns true if file exists, false otherwise
@@ -64,8 +63,3 @@ void save_file_list(std::vector<file> file_list){
     fout.close();
 }
 
-std::vector<page_id> get_page_list(std::vector<file> file_list){
-    for (auto p : file_list){
-        //todo
-    }
-}

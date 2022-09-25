@@ -14,10 +14,7 @@
 
 
 page_id alloc_page(){
-    std::vector<file> file_list = get_file_list();
-    for (auto f : page_list){
-
-    }
+    //todo
 }
 
 
@@ -31,3 +28,33 @@ void read_page(page_id page, std::vector<char>& buffer){
     err_message(2);
 }
 
+//note that this function merely gets the list of pages, not the list of pages where it is possible to write
+//in order to write into a page, the programme will use the get_available_page_list() function
+std::vector<page_id> get_page_list(std::vector<file> file_list){
+    std::vector<page_id> page_list;
+    for (auto f : file_list){
+        for (int i = 0; i<4; ++i){
+            page_id page;
+            page.file_id = f.id; //sets the id of the file for the page
+            page.id = i; // sets the id of the page (ranging from 0 to 3) => 4 pages maximum
+            page_list.push_back(page); //adds the page to the list of pages
+        }
+    }
+}
+
+//gets the pages that are available to write in
+//differs in that it checks if the page is empty
+std::vector<page_id> get_available_page_list(std::vector<file> file_list){
+    std::vector<page_id> page_list;
+    for (auto f : file_list){
+        for (int i = 0; i<4; ++i){
+            //only if the page isn't occupied !
+            if (!f.page_occupied[i]) {
+                page_id page;
+                page.file_id = f.id; //sets the id of the file for the page
+                page.id = i; // sets the id of the page (ranging from 0 to 3) => 4 pages maximum
+                page_list.push_back(page); //adds the page to the list of pages
+            }
+        }
+    }
+}
