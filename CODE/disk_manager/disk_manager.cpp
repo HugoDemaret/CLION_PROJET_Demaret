@@ -14,8 +14,7 @@
 
 
 page_id alloc_page(){
-    std::vector<file> file_list;
-    get_file_list(file_list);
+    std::vector<file> file_list = get_file_list();
     for (auto f : page_list){
 
     }

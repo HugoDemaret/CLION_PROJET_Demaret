@@ -10,9 +10,9 @@
 
 bool exists_file(const std::string& name);
 void read_page(page_id page, std::vector<char>& buffer);
-std::fstream get_file(std::string str);
+std::ifstream get_file(std::string str);
 u_int8_t create_file(std::string str);
-void get_file_list(std::vector<file>& file_list);
+std::vector<file> get_file_list(void);
 page_id alloc_page(std::vector<file> page_list);
 
 
