@@ -88,6 +88,9 @@
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/disk_manager.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
+		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/disk_manager.h">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/file.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
@@ -95,9 +98,6 @@
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/filelist.h">
-			<Option target="Projet_BDDA_DEMARET"/>
-		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/functions.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/page_id.h">
@@ -109,10 +109,10 @@
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/error_handler/error_handler.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/functions.h">
+		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp">
+		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
 		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp">

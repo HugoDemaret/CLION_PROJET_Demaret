@@ -16,7 +16,9 @@
 //CREATES NEW DATABASE "main_db"
 db_params main_db;
 //CREATES NEW FILE LIST "file_list"
-std::vector<file> file_list;
+std::vector<file> f_list;
+std::vector<page_id> a_page_list;
+std::vector<page_id> page_list;
 
 
 
@@ -27,8 +29,13 @@ int main(int argc, char **argv){
     main_db.page_size = PAGE_SIZE;
     main_db.max_pages_per_file = MAX_PAGES_PER_FILE;
     //loads the file list
-    std::vector<file> test = get_file_list();
+    f_list = get_file_list();
+    //initializes the pages (available and not available)
+    init_pages(f_list);
+    //
+
     std::cout << "DBMS" << std::endl;
+    //starts the shell
     shell_runner();
     return 0;
 }

@@ -14,6 +14,7 @@
 #include "filelist.h"
 
 
+
 //returns true if file exists, false otherwise
 bool exists_file(const std::string& name){
     struct stat buffer;
@@ -23,10 +24,10 @@ bool exists_file(const std::string& name){
 
 //creates a files if it doesn't exists (return success : 0), return an error otherwise (code 4)
 u_int8_t create_file(std::string str){
-    if (!exists_file(str)){
+    if (!exists_file("F" + str + ".bdda")){
         return 4;
     }
-    std::ofstream file(str, std::ios::binary);
+    std::ofstream file("F" + str + ".bdda", std::ios::binary);
     file.close();
     return 0;
 }
@@ -50,9 +51,10 @@ std::vector<file> get_file_list(void){
     std::string f_path = db_main.db_paths + "fileslist.schema";
     std::ifstream f_list = get_file(f_path);
     std::size_t f_size = std::filesystem::file_size(f_path);
+    //if files are registered (that is, they exist in fileslist.schema)
     const size_t count = f_size / sizeof(file);
     std::vector<file> file_list(count);
-    f_list.read(reinterpret_cast<char*>(&file_list[0]), count*sizeof(file));
+    f_list.read(reinterpret_cast<char *>(&file_list[0]), count * sizeof(file));
     return file_list;
 }
 
@@ -64,3 +66,16 @@ void save_file_list(std::vector<file> file_list){
     fout.close();
 }
 
+
+file init_file(uint32_t id){
+    std::string str = std::to_string(id);
+    create_file(str);
+    file f;
+    f.id = id;
+    f.size = 0;
+    f.nb_occupied = 0;
+    for (int i=0; i<4; ++i){
+        f.page_occupied[i] = false;
+    }
+    return f;
+}

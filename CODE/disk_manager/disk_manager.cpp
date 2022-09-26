@@ -14,7 +14,24 @@
 #include "filelist.h"
 
 page_id alloc_page(){
-    //todo
+    //if available page list is empty, creates new file, initializes pages et uses the first page of the file
+    if (a_p_list.empty()) {
+        uint32_t id = f_list.size();
+        file f = init_file(id);
+        f_list.push_back(f);
+        a_p_list = get_available_page_list(f_list);
+    }
+    //returns the first page available
+    page_id page;
+    //allocates a page to be returned with last value in vector
+    page = a_p_list.back();
+    //removes the allocated page in the vector
+    a_p_list.pop_back();
+    return page;
+}
+
+void dealloc_page(page_id page){
+    a_p_list.push_back(page);
 }
 
 
@@ -57,4 +74,11 @@ std::vector<page_id> get_available_page_list(std::vector<file> file_list){
             }
         }
     }
+    return page_list;
+}
+
+//initializes the pages at the start of the programme (see in main.cpp)
+void init_pages(std::vector<file> file_list){
+    a_p_list = get_available_page_list( file_list);
+    p_list = get_page_list(file_list);
 }
