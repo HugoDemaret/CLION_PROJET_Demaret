@@ -13,8 +13,10 @@
 #include "file.h"
 #include "filelist.h"
 
+
+//allocates a page from the a_p_list
 page_id alloc_page(){
-    //if available page list is empty, creates new file, initializes pages et uses the first page of the file
+    //if available page list is empty, creates new file, initializes pages and uses the first page of the file
     if (a_p_list.empty()) {
         uint32_t id = f_list.size();
         file f = init_file(id);
@@ -26,11 +28,27 @@ page_id alloc_page(){
     //allocates a page to be returned with last value in vector
     page = a_p_list.back();
     //removes the allocated page in the vector
+    // in f_list sets the page to occupied
+    for (auto fi : f_list){
+        if (fi.id == page.file_id){
+            fi.nb_occupied++;
+            fi.page_occupied[page.id] = true;
+        }
+    }
     a_p_list.pop_back();
     return page;
 }
 
+
+//deallocates a page given its page_id
 void dealloc_page(page_id page){
+    //in f_list sets the page to not occupied
+    for (auto fi : f_list){
+        if (fi.id == page.file_id){
+            fi.nb_occupied--;
+            fi.page_occupied[page.id] = false;
+        }
+    }
     a_p_list.push_back(page);
 }
 
@@ -81,4 +99,11 @@ std::vector<page_id> get_available_page_list(std::vector<file> file_list){
 void init_pages(std::vector<file> file_list){
     a_p_list = get_available_page_list( file_list);
     p_list = get_page_list(file_list);
+}
+
+int get_current_count_alloc_pages(){
+    //f_list.size()*4 gives the total number of pages (alloc or not)
+    //a_p_list.size() give the total number of non alloc pages
+    //thus we have the number of allocated pages without computing anything more complex (such as iterating over the lists)
+    return f_list.size()*4-a_p_list.size();
 }

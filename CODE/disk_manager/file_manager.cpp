@@ -50,8 +50,10 @@ std::ifstream get_file(std::string str){
 std::vector<file> get_file_list(void){
     std::string f_path = db_main.db_paths + "fileslist.schema";
     std::ifstream f_list = get_file(f_path);
+    //get fileslist.schema size
     std::size_t f_size = std::filesystem::file_size(f_path);
     //if files are registered (that is, they exist in fileslist.schema)
+    //gets the number of files in fileslist.schema
     const size_t count = f_size / sizeof(file);
     std::vector<file> file_list(count);
     f_list.read(reinterpret_cast<char *>(&file_list[0]), count * sizeof(file));
