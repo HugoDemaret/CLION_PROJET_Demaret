@@ -5,7 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "functions.h"
+#include "interpreter.h"
 
 int8_t interpreter(std::vector<std::string> command){
     return 0;

@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 #include "../string_converter/string_modifier.h"
-#include "functions.h"
+#include "interpreter.h"
 
 void shell_runner(void){
     bool quit = true;

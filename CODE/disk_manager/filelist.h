@@ -6,7 +6,7 @@
 #define PROJET_BDDA_DEMARET_FILELIST_H
 
 #include "file.h"
-#include "functions.h"
+#include "disk_manager.h"
 
 extern std::vector<file> file_list;
 

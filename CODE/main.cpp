@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
-#include "interpreter/functions.h"
+#include "interpreter/interpreter.h"
 #include "disk_manager/db_params.h"
-#include "disk_manager/functions.h"
+#include "disk_manager/disk_manager.h"
 #include "disk_manager/file.h"
 #include "disk_manager/page_id.h"
 #include "disk_manager/filelist.h"
@@ -28,7 +28,6 @@ int main(int argc, char **argv){
     main_db.max_pages_per_file = MAX_PAGES_PER_FILE;
     //loads the file list
     std::vector<file> test = get_file_list();
-
     std::cout << "DBMS" << std::endl;
     shell_runner();
     return 0;

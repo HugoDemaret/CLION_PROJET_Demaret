@@ -7,7 +7,7 @@
 #include <vector>
 #include <sys/stat.h>
 #include <string>
-#include "functions.h"
+#include "disk_manager.h"
 #include "../error_handler/error.h"
 #include "db_params.h"
 #include <filesystem>

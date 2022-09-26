@@ -6,7 +6,7 @@
 #include "db_params.h"
 #include <iostream>
 #include <string>
-#include "functions.h"
+#include "disk_manager.h"
 #include "../error_handler/error.h"
 #include "page_id.h"
 #include <vector>
