@@ -11,6 +11,7 @@
 #include "../error_handler/error.h"
 #include "db_params.h"
 #include <filesystem>
+#include "filelist.h"
 
 
 //returns true if file exists, false otherwise

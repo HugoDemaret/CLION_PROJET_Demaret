@@ -16,7 +16,6 @@ std::vector<file> get_file_list(void);
 page_id alloc_page(std::vector<file> page_list);
 std::vector<page_id> get_page_list(std::vector<file> file_list);
 void save_file_list(std::vector<file> file_list);
-std::vector<file> get_file_list(void);
 std::vector<page_id> get_available_page_list(std::vector<file> file_list);
 
 
