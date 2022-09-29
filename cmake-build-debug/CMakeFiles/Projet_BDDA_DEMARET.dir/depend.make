@@ -8,6 +8,7 @@ CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.o: ../CODE
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.o: ../CODE/disk_manager/filelist.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.o: ../CODE/disk_manager/page_id.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.o: ../CODE/error_handler/error.h
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.o: ../CODE/global.h
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o: ../CODE/disk_manager/db_params.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o: ../CODE/disk_manager/disk_manager.h
@@ -16,6 +17,7 @@ CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o: ../CODE
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o: ../CODE/disk_manager/filelist.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o: ../CODE/disk_manager/page_id.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o: ../CODE/error_handler/error.h
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o: ../CODE/global.h
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o: ../CODE/error_handler/error.h
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o: ../CODE/error_handler/error_handler.cpp
@@ -38,4 +40,6 @@ CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o: ../CODE/main.cpp
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o: ../CODE/string_converter/case_modifier.cpp
 
 CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o: ../CODE/string_converter/split.cpp
+
+CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/tests_manager/test.cpp.o: ../CODE/tests_manager/test.cpp
 

@@ -8,129 +8,133 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug"/>
+				<Option working_dir="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug"/>
+				<Option working_dir="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug"/>
+				<Option working_dir="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Projet_BDDA_DEMARET">
-				<Option output="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Projet_BDDA_DEMARET" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug"/>
+				<Option output="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Projet_BDDA_DEMARET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projet_BDDA_DEMARET"/>
-					<CompileFile command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projet_BDDA_DEMARET"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Projet_BDDA_DEMARET/fast">
-				<Option output="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Projet_BDDA_DEMARET" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug"/>
+				<Option output="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Projet_BDDA_DEMARET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projet_BDDA_DEMARET/fast"/>
-					<CompileFile command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j32 -f &quot;/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projet_BDDA_DEMARET/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/db_params.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/disk_manager.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/disk_manager.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/file.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/file_manager.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file_manager.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/filelist.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/filelist.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/disk_manager/page_id.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/page_id.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/error_handler/error.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/error_handler/error.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/error_handler/error_handler.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/error_handler/error_handler.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/global.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/interpreter.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/interpreter/interpreter.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/interpreter/shell.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/interpreter/interpreter.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/main.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/interpreter/shell.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/case_modifier.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/main.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/split.cpp">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/string_converter/case_modifier.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CODE/string_converter/string_modifier.h">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/string_converter/split.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
-		<Unit filename="/home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/CMakeLists.txt">
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/string_converter/string_modifier.h">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.cpp">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

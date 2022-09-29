@@ -15,10 +15,8 @@
 
 //CREATES NEW DATABASE "main_db"
 db_params main_db;
-//CREATES NEW FILE LIST "file_list"
+//CREATES NEW FILE LIST "f_list"
 std::vector<file> f_list;
-std::vector<page_id> a_page_list;
-std::vector<page_id> page_list;
 
 
 
@@ -37,5 +35,6 @@ int main(int argc, char **argv){
     std::cout << "DBMS" << std::endl;
     //starts the shell
     shell_runner();
+    save_file_list(f_list);
     return 0;
 }

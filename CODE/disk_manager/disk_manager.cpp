@@ -12,6 +12,10 @@
 #include <vector>
 #include "file.h"
 #include "filelist.h"
+#include "../global.h"
+
+std::vector<page_id> a_p_list;
+std::vector<page_id> p_list;
 
 
 //allocates a page from the a_p_list
@@ -25,7 +29,8 @@ page_id alloc_page(){
     }
     //returns the first page available
     page_id page;
-    //allocates a page to be returned with last value in vector
+    //allocates a page to be returned with last value in vector (we use a stack => allows for a sequential fill of the files
+    // thus optimising the space taken on the disk)
     page = a_p_list.back();
     //removes the allocated page in the vector
     // in f_list sets the page to occupied
@@ -55,12 +60,26 @@ void dealloc_page(page_id page){
 
 
 //reads page with page_id, puts page into the buffer
-void read_page(page_id page, std::vector<char>& buffer){
-    if (exists_file("F" + std::to_string(page.file_id) + ".bdda")) {
-        std::fstream file("F" + std::to_string(page.file_id) + ".bdda", std::ios::binary);
-        buffer = std::vector(std::istreambuf_iterator<char>(file), {});
+void read_page(page_id page, char *buffer[]){
+    if ((page.id >= 4) && exists_file("F" + std::to_string(page.file_id) + ".bdda")) {
+        err_message(3);
+    } else {
+        //todo : open file ; get to position page.id * 4096; load into the buffer from page.id * 4096 to page.id *4096 + 4095
+        std::fstream file = get_file("F" + std::to_string(page.file_id) + ".bdda" );
+        file.seekg(page.id * 4096 , std::ios::end);
+        file.read(*buffer, 4096);
     }
-    err_message(2);
+}
+
+void write_page(page_id page, char *buffer[]){
+    //todo : open file; get to position page.id*4k; writes with f.write();
+    if ((page.id >= 4) && exists_file("F" + std::to_string(page.file_id) + ".bdda")) {
+        err_message(3);
+    } else {
+        std::fstream file = get_file("F" + std::to_string(page.file_id) + ".bdda" );
+        file.seekg(page.id * 4096 , std::ios::end);
+        file.write(*buffer, 4096);
+    }
 }
 
 //note that this function merely gets the list of pages, not the list of pages where it is possible to write
@@ -75,6 +94,7 @@ std::vector<page_id> get_page_list(std::vector<file> file_list){
             page_list.push_back(page); //adds the page to the list of pages
         }
     }
+    return page_list;
 }
 
 //gets the pages that are available to write in

@@ -11,6 +11,5 @@ typedef struct db_params{
     u_char max_pages_per_file; //limited to 4 (in our case)
 }db_params;
 
-extern db_params db_main;
 
 #endif //PROJET_BDDA_DEMARET_DB_PARAMS_H

@@ -23,7 +23,7 @@ void err_message(int8_t err_code){
             std::cout << "Error : " << err_code << " File could not be found!" << std::endl;
             break;
         case 3:
-            std::cout << "Error : " << err_code << " To be attributed" << std::endl;
+            std::cout << "Error : " << err_code << " Page not found ! (Maybe the page you tried to access is > 4 ?)" << std::endl;
             break;
         case 4:
             std::cout << "Error : " << err_code << " File already exists!" << std::endl;

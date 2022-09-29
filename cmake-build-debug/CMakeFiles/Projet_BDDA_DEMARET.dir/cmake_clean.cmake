@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/case_modifier.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/string_converter/split.cpp.o"
+  "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/tests_manager/test.cpp.o"
   "Projet_BDDA_DEMARET"
   "Projet_BDDA_DEMARET.pdb"
 )

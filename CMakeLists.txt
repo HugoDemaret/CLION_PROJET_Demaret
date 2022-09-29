@@ -14,4 +14,4 @@ add_executable(
         CODE/interpreter/interpreter.cpp
         CODE/disk_manager/db_params.h
         CODE/error_handler/error.h
-        CODE/error_handler/error_handler.cpp CODE/disk_manager/disk_manager.cpp CODE/disk_manager/disk_manager.h CODE/disk_manager/file_manager.cpp CODE/disk_manager/page_id.h CODE/disk_manager/file.h CODE/disk_manager/filelist.h)
+        CODE/error_handler/error_handler.cpp CODE/disk_manager/disk_manager.cpp CODE/disk_manager/disk_manager.h CODE/disk_manager/file_manager.cpp CODE/disk_manager/page_id.h CODE/disk_manager/file.h CODE/disk_manager/filelist.h CODE/global.h CODE/tests_manager/test.cpp)
