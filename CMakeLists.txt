@@ -12,6 +12,6 @@ add_executable(
         CODE/string_converter/split.cpp
         CODE/string_converter/string_modifier.h
         CODE/interpreter/interpreter.cpp
-        CODE/disk_manager/db_params.h
+        CODE/db_params.h
         CODE/error_handler/error.h
-        CODE/error_handler/error_handler.cpp CODE/disk_manager/disk_manager.cpp CODE/disk_manager/disk_manager.h CODE/disk_manager/file_manager.cpp CODE/disk_manager/page_id.h CODE/disk_manager/file.h CODE/disk_manager/filelist.h CODE/global.h CODE/tests_manager/test.cpp CODE/tests_manager/test.h)
+        CODE/error_handler/error_handler.cpp CODE/disk_manager/disk_manager.cpp CODE/disk_manager/disk_manager.h CODE/disk_manager/file_manager.cpp CODE/disk_manager/page_id.h CODE/disk_manager/file.h CODE/disk_manager/filelist.h CODE/global.h CODE/tests_manager/test.cpp CODE/tests_manager/test.h CODE/buffer_manager/buffer_manager.h CODE/buffer_manager/buffer_manager.cpp CODE/buffer_manager/frame.h)

@@ -3,7 +3,7 @@
 //
 #include <fstream>
 #include <sys/stat.h>
-#include "db_params.h"
+#include "../db_params.h"
 #include <iostream>
 #include <string>
 #include "disk_manager.h"

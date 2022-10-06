@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <stdio.h>
 #include "disk_manager/disk_manager.h"
-#include "disk_manager/db_params.h"
+#include "db_params.h"
 #include "disk_manager/file.h"
 
 

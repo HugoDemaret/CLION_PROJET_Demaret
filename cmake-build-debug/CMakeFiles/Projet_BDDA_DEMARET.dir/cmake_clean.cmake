@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/buffer_manager/buffer_manager.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/disk_manager.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/disk_manager/file_manager.cpp.o"
   "CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/error_handler/error_handler.cpp.o"

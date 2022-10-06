@@ -142,6 +142,33 @@ Projet_BDDA_DEMARET/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/build
 .PHONY : Projet_BDDA_DEMARET/fast
 
+CODE/buffer_manager/buffer_manager.o: CODE/buffer_manager/buffer_manager.cpp.o
+
+.PHONY : CODE/buffer_manager/buffer_manager.o
+
+# target to build an object file
+CODE/buffer_manager/buffer_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/buffer_manager/buffer_manager.cpp.o
+.PHONY : CODE/buffer_manager/buffer_manager.cpp.o
+
+CODE/buffer_manager/buffer_manager.i: CODE/buffer_manager/buffer_manager.cpp.i
+
+.PHONY : CODE/buffer_manager/buffer_manager.i
+
+# target to preprocess a source file
+CODE/buffer_manager/buffer_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/buffer_manager/buffer_manager.cpp.i
+.PHONY : CODE/buffer_manager/buffer_manager.cpp.i
+
+CODE/buffer_manager/buffer_manager.s: CODE/buffer_manager/buffer_manager.cpp.s
+
+.PHONY : CODE/buffer_manager/buffer_manager.s
+
+# target to generate assembly for a file
+CODE/buffer_manager/buffer_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/buffer_manager/buffer_manager.cpp.s
+.PHONY : CODE/buffer_manager/buffer_manager.cpp.s
+
 CODE/disk_manager/disk_manager.o: CODE/disk_manager/disk_manager.cpp.o
 
 .PHONY : CODE/disk_manager/disk_manager.o
@@ -394,6 +421,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Projet_BDDA_DEMARET"
+	@echo "... CODE/buffer_manager/buffer_manager.o"
+	@echo "... CODE/buffer_manager/buffer_manager.i"
+	@echo "... CODE/buffer_manager/buffer_manager.s"
 	@echo "... CODE/disk_manager/disk_manager.o"
 	@echo "... CODE/disk_manager/disk_manager.i"
 	@echo "... CODE/disk_manager/disk_manager.s"

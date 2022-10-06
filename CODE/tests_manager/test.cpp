@@ -4,7 +4,7 @@
 #include <iostream>
 #include <time.h>
 #include <vector>
-#include "../disk_manager/db_params.h"
+#include "../db_params.h"
 #include "../disk_manager/page_id.h"
 #include "../disk_manager/disk_manager.h"
 #include "../disk_manager/file.h"

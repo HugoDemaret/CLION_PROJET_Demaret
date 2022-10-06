@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "error.h"
-#include "../disk_manager/db_params.h"
+#include "../db_params.h"
 #include "../global.h"
 
 

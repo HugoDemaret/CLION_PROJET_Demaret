@@ -80,6 +80,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/buffer_manager/buffer_manager.cpp">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/buffer_manager/buffer_manager.h">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/buffer_manager/frame.h">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
 		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>

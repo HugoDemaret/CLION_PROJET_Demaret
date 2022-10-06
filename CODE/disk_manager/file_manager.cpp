@@ -12,7 +12,7 @@
 #include <string>
 #include "disk_manager.h"
 #include "../error_handler/error.h"
-#include "db_params.h"
+#include "../db_params.h"
 #include <filesystem>
 #include "filelist.h"
 #include "../global.h"

@@ -1,0 +1,10 @@
+//
+// Created by Hugo Demaret on 06/10/2022.
+//
+
+#ifndef PROJET_BDDA_DEMARET_BUFFER_MANAGER_H
+#define PROJET_BDDA_DEMARET_BUFFER_MANAGER_H
+
+#include "frame.h"
+
+#endif //PROJET_BDDA_DEMARET_BUFFER_MANAGER_H
