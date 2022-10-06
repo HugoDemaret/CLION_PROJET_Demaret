@@ -3,8 +3,11 @@
 //
 
 #include <iostream>
+#include <algorithm>
 #include <fstream>
+#include <cstring>
 #include <vector>
+#include <stdio.h>
 #include <sys/stat.h>
 #include <string>
 #include "disk_manager.h"
@@ -18,32 +21,7 @@
 
 
 
-//returns true if file exists, false otherwise
-bool exists_file(const std::string& name){
-    struct stat buffer;
-    return (stat (name.c_str(), &buffer) == 0);
-}
 
-
-//creates a files if it doesn't exists (return success : 0), return an error otherwise (code 4)
-u_int8_t create_file(std::string str){
-    if (!exists_file("F" + str + ".bdda")){
-        return 4;
-    }
-    std::fstream file("F" + str + ".bdda", std::ios::binary);
-    file.close();
-    return 0;
-}
-
-//opens a file if it exists, creates a new file and returns it if not
-std::fstream get_file(std::string str){
-    //we pass to the create_file :  it will check if it exists or create it otherwise, then we print the return value
-    int8_t err_code = create_file(str);
-    err_message(err_code);
-    //then we return the file that has the corresponding name (that we either just created, or that already existed)
-    std::fstream file(str, std::ios::binary);
-    return file;
-}
 
 
 //gets the list of pages from filelist.schema : a binary file that keeps record of the state of every files
@@ -52,31 +30,46 @@ std::fstream get_file(std::string str){
 //implement an alternative method to rebuild the file ? (maybe after if i'm not already dead/strongly deficient bc of c++)
 std::vector<file> get_file_list(void){
     std::string f_path = main_db.db_paths + "fileslist.schema";
-    std::cout << main_db.db_paths << " here" << std::endl;
-    std::cout << f_path << std::endl;
-    std::fstream f_list = get_file(f_path);
-    //get fileslist.schema size
-    std::size_t f_size = std::filesystem::file_size(f_path);
-    //if files are registered (that is, they exist in fileslist.schema)
-    //gets the number of files in fileslist.schema
-    const size_t count = f_size / sizeof(file);
-    std::vector<file> file_list(count);
-    f_list.read(reinterpret_cast<char *>(&file_list[0]), count * sizeof(file));
-    return file_list;
+    char* path = f_path.data();
+    FILE* input_file;
+    input_file = fopen(path,"rb");
+    if (input_file == NULL){
+        err_message(3);
+        exit(0);
+    }
+    struct stat st;
+    stat(path, &st);
+    int size = st.st_size / sizeof(file);
+    file buffer[size];
+    std::vector<file> f_list;
+    fread(buffer, sizeof(file), size, input_file);
+    f_list.push_back(buffer[0]);
+    fclose(input_file);
+    //free(buffer);
+    return f_list;
 }
 
-void save_file_list(std::vector<file> file_list){
-    //todo : improve ?
+void save_file_list(void){
     std::string f_path = main_db.db_paths + "fileslist.schema";
-    std::ofstream fout(f_path, std::ios::out | std::ios::binary);
-    fout.write((char*)&file_list[0], file_list.size() * sizeof(file));
-    fout.close();
+    char* path = f_path.data();
+    FILE* output_file;
+    output_file = fopen(path,"w+b");
+    if (output_file == NULL){
+        err_message(3);
+        exit(0);
+    }
+    file buffer[file_list.size()];
+    std::copy(file_list.begin(), file_list.end(), buffer);
+    rewind(output_file);
+    fwrite(buffer, sizeof(file), file_list.size(), output_file);
+    fwrite(buffer, 1, sizeof(buffer), output_file);
+    fclose(output_file);
+    //free(buffer);
 }
 
 
 file init_file(uint32_t id){
     std::string str = std::to_string(id);
-    create_file(str);
     file f;
     f.id = id;
     f.size = 0;

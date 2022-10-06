@@ -18,16 +18,17 @@ bool exists_file(const std::string& name);
 std::fstream get_file(std::string str);
 u_int8_t create_file(std::string str);
 std::vector<file> get_file_list();
-void save_file_list(std::vector<file> file_list);
+void save_file_list();
 file init_file(uint32_t id);
 
 //disk_manager.cpp
-std::vector<page_id> get_available_page_list(std::vector<file> file_list);
-void read_page(page_id page, char *buffer[]);
-void write_page(page_id page, char *buffer[]);
-page_id alloc_page(std::vector<file> page_list);
-std::vector<page_id> get_page_list(std::vector<file> file_list);
-void init_pages(std::vector<file> file_list);
+std::vector<page_id> get_available_page_list();
+void read_page(page_id page, char* buffer);
+void write_page(page_id page, char* buffer);
+page_id alloc_page();
+void dealloc_page(page_id page);
+std::vector<page_id> get_page_list();
+void init_pages();
 //
 
 

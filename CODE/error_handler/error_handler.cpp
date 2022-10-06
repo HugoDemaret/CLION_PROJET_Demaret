@@ -4,6 +4,9 @@
 
 #include <iostream>
 #include "error.h"
+#include "../disk_manager/db_params.h"
+#include "../global.h"
+
 
 void err_message(int8_t err_code){
     switch (err_code) {
@@ -27,6 +30,9 @@ void err_message(int8_t err_code){
             break;
         case 4:
             std::cout << "Error : " << err_code << " File already exists!" << std::endl;
+            break;
+        case 5:
+            std::cout << "Error : " << err_code << " Maximum page number is :" << main_db.max_pages_per_file << std::endl;
             break;
         //from 10 to 19 : error with saving procedure (no file, path not found etc)
         //From 20 to 29 : error with disk manager

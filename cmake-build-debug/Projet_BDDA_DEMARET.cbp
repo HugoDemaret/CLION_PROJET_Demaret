@@ -134,6 +134,9 @@
 		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.cpp">
 			<Option target="Projet_BDDA_DEMARET"/>
 		</Unit>
+		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.h">
+			<Option target="Projet_BDDA_DEMARET"/>
+		</Unit>
 		<Unit filename="/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

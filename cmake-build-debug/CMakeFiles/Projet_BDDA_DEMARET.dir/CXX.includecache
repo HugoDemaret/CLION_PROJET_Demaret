@@ -8,32 +8,6 @@
 
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h
 
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.cpp
-fstream
--
-sys/stat.h
--
-db_params.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h
-iostream
--
-string
--
-disk_manager.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
-../error_handler/error.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/error_handler/error.h
-page_id.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/page_id.h
-vector
--
-file.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h
-filelist.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/filelist.h
-../global.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/global.h
-
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
 iostream
 -
@@ -48,30 +22,6 @@ file.h
 
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h
 
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file_manager.cpp
-iostream
--
-fstream
--
-vector
--
-sys/stat.h
--
-string
--
-disk_manager.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
-../error_handler/error.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/error_handler/error.h
-db_params.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h
-filesystem
--
-filelist.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/filelist.h
-../global.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/global.h
-
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/filelist.h
 file.h
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h
@@ -79,16 +29,6 @@ disk_manager.h
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
 
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/page_id.h
-
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/error_handler/error.h
-
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/global.h
-disk_manager/disk_manager.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
-disk_manager/db_params.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h
-disk_manager/file.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h
 
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/interpreter/interpreter.h
 
@@ -109,4 +49,10 @@ disk_manager/page_id.h
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/page_id.h
 disk_manager/filelist.h
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/filelist.h
+tests_manager/test.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.h
+
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.h
+time.h
+-
 
