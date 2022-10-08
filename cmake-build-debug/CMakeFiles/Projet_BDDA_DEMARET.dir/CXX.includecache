@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/db_params.h
 
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
 iostream
@@ -30,27 +30,39 @@ disk_manager.h
 
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/page_id.h
 
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/interpreter/interpreter.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/global.h
+algorithm
+-
+stdio.h
+-
+disk_manager/disk_manager.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
+db_params.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/db_params.h
+disk_manager/file.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h
 
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/main.cpp
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.cpp
 iostream
+-
+time.h
 -
 vector
 -
-interpreter/interpreter.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/interpreter/interpreter.h
-disk_manager/db_params.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/db_params.h
-disk_manager/disk_manager.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
-disk_manager/file.h
-/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h
-disk_manager/page_id.h
+../db_params.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/db_params.h
+../disk_manager/page_id.h
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/page_id.h
-disk_manager/filelist.h
+../disk_manager/disk_manager.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/disk_manager.h
+../disk_manager/file.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/file.h
+../disk_manager/filelist.h
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/disk_manager/filelist.h
-tests_manager/test.h
+test.h
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.h
+../global.h
+/Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/global.h
 
 /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/CODE/tests_manager/test.h
 time.h

@@ -12,7 +12,7 @@
 #include "test.h"
 #include "../global.h"
 
-#define TESTNBPAGE 5
+#define TESTNBPAGE 10
 
 void test_disk_manager(){
     clock_t start_time = clock();
