@@ -7,6 +7,7 @@
 #include "disk_manager/page_id.h"
 #include "disk_manager/filelist.h"
 #include "tests_manager/test.h"
+#include "global.h"
 
 
 #define DEBUG 1
@@ -32,6 +33,7 @@ int main(int argc, char **argv){
     main_db.frame_count = MAX_FRAME_COUNT;
     //loads the file list
     file_list = get_file_list();
+    init_frames();
     //initializes the pages (available and not available)
     init_pages();
     //

@@ -6,10 +6,13 @@
 #define PROJET_BDDA_DEMARET_GLOBAL_H
 
 #include <algorithm>
+#include <map>
 #include <stdio.h>
-#include "disk_manager/disk_manager.h"
 #include "db_params.h"
+#include "disk_manager/disk_manager.h"
 #include "disk_manager/file.h"
+#include "buffer_manager/buffer_manager.h"
+
 
 
 extern db_params main_db;
