@@ -9,9 +9,9 @@
 #include "../global.h"
 #include "../disk_manager/disk_manager.h"
 
-extern std::vector<page_id> lru;
-extern std::vector<frame> frame_list;
-extern std::vector<frame> empty_frame_list;
+extern std::list<page_id> lru;
+extern std::list<std::pair<frame,page_id> > frame_list;
+extern std::list<frame> empty_frame_list;
 
 char* get_page(page_id page);
 void free_page(page_id page, bool dirty);

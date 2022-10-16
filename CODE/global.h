@@ -7,6 +7,8 @@
 
 #include <algorithm>
 #include <map>
+#include <list>
+#include <utility>
 #include <stdio.h>
 #include "db_params.h"
 #include "disk_manager/disk_manager.h"

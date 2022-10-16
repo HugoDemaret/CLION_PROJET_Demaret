@@ -9,7 +9,6 @@
 typedef struct frame{
     u_int8_t pin_count;
     bool dirt;
-    page_id page_id;
     char *buffer;
 }frame;
 
