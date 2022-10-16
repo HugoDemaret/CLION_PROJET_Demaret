@@ -16,7 +16,8 @@ char* get_page(page_id page){
         empty_frame_list.pop_back();
         read_page(page, f.buffer);
         f.pin_count++;
-        frame_list.push_back(std::make_pair(f,page));
+        f.page = page;
+        frame_list.emplace_back(std::make_pair(f,page));
         return f.buffer;
     }
     if (frame_list.size() < main_db.frame_count){
@@ -32,7 +33,8 @@ char* get_page(page_id page){
         empty_frame_list.pop_back();
         read_page(page, f.buffer);
         f.pin_count++;
-        frame_list.push_back(std::make_pair(f,page));
+        f.page = page;
+        frame_list.emplace_back(std::make_pair(f,page));
         return f.buffer;
     }
     //LRU :
@@ -40,29 +42,37 @@ char* get_page(page_id page){
     frame_list.pop_front();
     read_page(page, f.buffer);
     f.pin_count++;
-    frame_list.push_back(std::make_pair(f,page));
+    f.page = page;
+    frame_list.emplace_back(std::make_pair(f,page));
     return f.buffer;
 }
 
 void free_page(page_id page, bool dirty){
-    for (auto it = frame_list.begin(); it != frame_list.end(); ++it){
-        if (it->second.id == page.id && it->second.file_id == page.file_id){
-            it->first.pin_count--;
-
-
+    for (auto & it : frame_list){
+        if (it.second.id == page.id && it.second.file_id == page.file_id){
+            it.first.pin_count--;
+            it.first.dirt = dirty;
         }
     }
 }
 
 void flush_all(){
     char buffer[main_db.page_size];
-    for (auto it = frame_list.begin(); it != frame_list.end(); ++it){
-        if (it->first.dirt){
-            write_page(it->second,it->first.buffer);
+    for (auto & it : frame_list){
+        if (it.first.dirt){
+            write_page(it.second,it.first.buffer);
         }
-        it->first.pin_count =0;
-        it->first.dirt = false;
-        it->first.buffer = buffer;
+        it.first.pin_count =0;
+        it.first.dirt = false;
+        it.first.buffer = buffer;
+    }
+    for (auto & it:empty_frame_list){
+        if (it.dirt){
+            write_page(it.page,it.buffer);
+        }
+        it.pin_count =0;
+        it.dirt = false;
+        it.buffer = buffer;
     }
 }
 

@@ -10,6 +10,7 @@ typedef struct frame{
     u_int8_t pin_count;
     bool dirt;
     char *buffer;
+    page_id page;
 }frame;
 
 #endif //PROJET_BDDA_DEMARET_FRAME_H
