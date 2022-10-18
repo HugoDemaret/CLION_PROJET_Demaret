@@ -29,6 +29,19 @@
 //faster than checking every file in the DB, but if the file gets deleted, then we are doomed :
 //implement an alternative method to rebuild the file ? (maybe after if i'm not already dead/strongly deficient bc of c++)
 std::vector<file> get_file_list(void){
+    //std::cout << main_db.db_paths << " here" << std::endl;
+    //std::cout << f_path << std::endl;
+    std::string f_path = main_db.db_paths + "fileslist.schema";
+    std::fstream f_list(f_path, std::ios::binary);
+    //get fileslist.schema size
+    std::size_t f_size = std::filesystem::file_size(f_path);
+    //if files are registered (that is, they exist in fileslist.schema)
+    //gets the number of files in fileslist.schema
+    const size_t count = f_size / sizeof(file);
+    std::vector<file> file_list(count);
+    f_list.read(reinterpret_cast<char *>(&file_list[0]), count * sizeof(file));
+    return file_list;
+    /*
     std::string f_path = main_db.db_paths + "fileslist.schema";
     char* path = f_path.data();
     FILE* input_file;
@@ -47,13 +60,18 @@ std::vector<file> get_file_list(void){
     fclose(input_file);
     //free(buffer);
     return f_list;
+     */
 }
 
 void save_file_list(void){
     std::string f_path = main_db.db_paths + "fileslist.schema";
+    std::ofstream fout(f_path, std::ios::out | std::ios::binary);
+    fout.write((char*)&file_list[0], file_list.size() * sizeof(file));
+    fout.close();
+    /*
     char* path = f_path.data();
     FILE* output_file;
-    output_file = fopen(path,"w+b");
+    output_file = fopen(path,"w+");
     if (output_file == NULL){
         err_message(3);
         exit(0);
@@ -65,6 +83,7 @@ void save_file_list(void){
     fwrite(buffer, 1, sizeof(buffer), output_file);
     fclose(output_file);
     //free(buffer);
+    */
 }
 
 

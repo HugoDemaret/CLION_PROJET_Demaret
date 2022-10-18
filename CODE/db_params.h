@@ -5,6 +5,7 @@
 #ifndef PROJET_BDDA_DEMARET_DB_PARAMS_H
 #define PROJET_BDDA_DEMARET_DB_PARAMS_H
 
+#include <string>
 
 typedef struct db_params{
     std::string db_paths;

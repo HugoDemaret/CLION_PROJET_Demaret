@@ -33,7 +33,7 @@ int main(int argc, char **argv){
     main_db.frame_count = MAX_FRAME_COUNT;
     //loads the file list
     file_list = get_file_list();
-    init_frames();
+//    init_frames();
     //initializes the pages (available and not available)
     init_pages();
     //

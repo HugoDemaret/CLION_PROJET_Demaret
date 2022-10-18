@@ -15,6 +15,32 @@
 #define TESTNBPAGE 10
 
 void test_disk_manager(){
+    page_id page;
+    page = alloc_page();
+    char* buffer = NULL;
+    char* rbuffer = NULL;
+    buffer = (char*)calloc(main_db.page_size,sizeof(char));
+    rbuffer = (char*)calloc(main_db.page_size,sizeof(char));
+
+    for(int i = 0; i<main_db.page_size;++i){
+        buffer[i] = 'c';
+    }
+
+    write_page(page,buffer);
+    read_page(page,rbuffer);
+
+    for (int i = 0; i<main_db.page_size; ++i){
+        printf("%c",rbuffer[i]);
+    }
+
+    dealloc_page(page);
+    page = alloc_page();
+    for(int i = 0; i<main_db.page_size;++i){
+        buffer[i] = 'a';
+    }
+    write_page(page,buffer);
+    std::cout << page.file_id << " and " << page.id << std::endl;
+    /*
     clock_t start_time = clock();
     page_id page;
     page = alloc_page();
@@ -68,4 +94,12 @@ void test_disk_manager(){
     }
     double elapsed_time = (double)(clock() - start_time) / CLOCKS_PER_SEC;
     printf("Done in %f seconds\n", elapsed_time);
+     */
+    free(buffer);
+    free(rbuffer);
+}
+
+
+void test_buffer_manager(){
+
 }
