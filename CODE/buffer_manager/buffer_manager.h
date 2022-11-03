@@ -5,6 +5,11 @@
 #ifndef PROJET_BDDA_DEMARET_BUFFER_MANAGER_H
 #define PROJET_BDDA_DEMARET_BUFFER_MANAGER_H
 
+#include <algorithm>
+#include <map>
+#include <list>
+#include <utility>
+#include <stdio.h>
 #include "frame.h"
 #include "../global.h"
 #include "../disk_manager/disk_manager.h"

@@ -9,6 +9,11 @@ std::list<page_id> lru;
 std::list<std::pair<frame,page_id> > frame_list;
 std::list<frame> empty_frame_list;
 
+/**
+ * Loads a page into a buffer with a call to the disk manager, given a page_id
+ * @param page
+ * @return buffer filled with page
+ */
 char* get_page(page_id page){
     //if frames are not occupied
     if (frame_list.empty()){
@@ -47,6 +52,11 @@ char* get_page(page_id page){
     return f.buffer;
 }
 
+/**
+ * Frees the page, updates the dirt value accordingly
+ * @param page
+ * @param dirty
+ */
 void free_page(page_id page, bool dirty){
     for (auto & it : frame_list){
         if (it.second.id == page.id && it.second.file_id == page.file_id){
@@ -56,6 +66,10 @@ void free_page(page_id page, bool dirty){
     }
 }
 
+
+/**
+ * Flushes all pages and saves those with dirty set to true
+ */
 void flush_all(){
     char buffer[main_db.page_size];
     for (auto & it : frame_list){
@@ -76,7 +90,9 @@ void flush_all(){
     }
 }
 
-
+/**
+ * Initialises all the frames for the DBMS
+ */
 void init_frames(){
     char buffer[main_db.page_size];
     for(int i = 0; i<main_db.frame_count; ++i){

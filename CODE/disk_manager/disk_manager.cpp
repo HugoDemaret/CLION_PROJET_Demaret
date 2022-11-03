@@ -19,6 +19,10 @@ std::vector<page_id> p_list;
 
 
 //allocates a page from the a_p_list
+/**
+ * Allocates a page with a stack. If there is no page available, creates a new virtual file alongside new pages
+ * @return a page page_id
+ */
 page_id alloc_page(){
     //if available page list is empty, creates new file, initializes pages and uses the first page of the file
     if (a_p_list.empty()) {
@@ -46,6 +50,10 @@ page_id alloc_page(){
 
 
 //deallocates a page given its page_id
+/**
+ * Deallocates a page page_id by putting it on the stack
+ * @param page
+ */
 void dealloc_page(page_id page){
     //in f_list sets the page to not occupied
     for (auto fi : file_list){
@@ -60,6 +68,11 @@ void dealloc_page(page_id page){
 
 
 //reads page with page_id, puts page into the buffer
+/**
+ * Reads a page and loads it into a buffer
+ * @param page
+ * @param buffer
+ */
 void read_page(page_id page, char* buffer){
     //checks if the page asked for respect the max number of pages available
     if (page.id >= main_db.max_pages_per_file) {
@@ -78,6 +91,11 @@ void read_page(page_id page, char* buffer){
     }
 }
 
+/**
+ * Saves the content of a buffer into a page on the disk
+ * @param page
+ * @param buffer
+ */
 void write_page(page_id page,  char* buffer){
     //checks if the page asked for respect the max number of pages available
     std::cout << std::endl;
@@ -98,6 +116,10 @@ void write_page(page_id page,  char* buffer){
 
 //note that this function merely gets the list of pages, not the list of pages where it is possible to write
 //in order to write into a page, the programme will use the get_available_page_list() function
+/**
+ *
+ * @return list of all the pages
+ */
 std::vector<page_id> get_page_list(){
     std::vector<page_id> page_list;
     for (auto f : file_list){
@@ -113,6 +135,10 @@ std::vector<page_id> get_page_list(){
 
 //gets the pages that are available to write in
 //differs in that it checks if the page is empty
+/**
+ *
+ * @return list of all the pages that are free to write in
+ */
 std::vector<page_id> get_available_page_list(){
     std::vector<page_id> page_list;
     for (auto f : file_list){
@@ -130,11 +156,18 @@ std::vector<page_id> get_available_page_list(){
 }
 
 //initializes the pages at the start of the programme (see in main.cpp)
+/**
+ * Initialises the page lists
+ */
 void init_pages(){
     a_p_list = get_available_page_list( );
     p_list = get_page_list();
 }
 
+/**
+ *
+ * @return number of pages currently allocated
+ */
 int get_current_count_alloc_pages(){
     //f_list.size()*4 gives the total number of pages (alloc or not)
     //a_p_list.size() give the total number of non alloc pages
