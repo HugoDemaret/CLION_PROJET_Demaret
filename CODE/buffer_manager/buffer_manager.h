@@ -11,7 +11,6 @@
 #include <utility>
 #include <stdio.h>
 #include "frame.h"
-#include "../global.h"
 #include "../disk_manager/disk_manager.h"
 
 extern std::list<page_id> lru;
@@ -22,5 +21,6 @@ char* get_page(page_id page);
 void free_page(page_id page, bool dirty);
 void flush_all();
 void init_frames();
+void free_buffer(char** buffer);
 
 #endif //PROJET_BDDA_DEMARET_BUFFER_MANAGER_H

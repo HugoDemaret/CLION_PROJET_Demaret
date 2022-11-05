@@ -86,8 +86,30 @@ void save_file_list(void){
     */
 }
 
+u_int16_t get_nb_file(){
+    std::string f_path = main_db.db_paths + "nb_files.schema";
+    //opens the file in binary mode
+    u_int16_t nb_file = 0;
+    FILE* input_file;
+    char* path = f_path.data();
+    input_file = fopen(path,"r");
+    fscanf(input_file,"%d",&nb_file);
+    fclose(input_file);
+    return nb_file;
+}
 
-file init_file(uint32_t id){
+void save_nb_file(void){
+    std::string f_path = main_db.db_paths + "nb_files.schema";
+    //opens the file in binary mode
+    FILE* output_file;
+    char* path = f_path.data();
+    output_file = fopen(path,"w");
+    fprintf(output_file,"%d",main_db.total_nb_file);
+    //putw(main_db.total_nb_file,output_file);
+    fclose(output_file);
+}
+
+file init_file(uint16_t id){
     std::string str = std::to_string(id);
     file f;
     f.id = id;

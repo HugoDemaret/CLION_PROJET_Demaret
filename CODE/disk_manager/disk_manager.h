@@ -19,7 +19,9 @@ std::fstream get_file(std::string str);
 u_int8_t create_file(std::string str);
 std::vector<file> get_file_list();
 void save_file_list();
-file init_file(uint32_t id);
+file init_file(u_int16_t id);
+void save_nb_file();
+u_int16_t get_nb_file();
 
 //disk_manager.cpp
 std::vector<page_id> get_available_page_list();

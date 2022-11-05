@@ -26,8 +26,10 @@ std::vector<page_id> p_list;
 page_id alloc_page(){
     //if available page list is empty, creates new file, initializes pages and uses the first page of the file
     if (a_p_list.empty()) {
-        uint32_t id = file_list.size();
-        file f = init_file(id);
+        u_int16_t nb_file = main_db.total_nb_file;
+        printf("\nNB FICHIERS : %d\n",nb_file);
+        file f = init_file(nb_file);
+        main_db.total_nb_file++;
         file_list.push_back(f);
         a_p_list = get_available_page_list();
     }
@@ -81,13 +83,15 @@ void read_page(page_id page, char* buffer){
        //sets the file path
         std::string f_path = main_db.db_paths + "F" + std::to_string(page.file_id) + ".bdda";
         //opens the file in binary mode
-        FILE* output_file;
+        FILE* output_file = NULL;
         char* path = f_path.data();
         output_file = fopen(path,"rb");
         fseek(output_file, page.id * main_db.page_size,SEEK_SET);
         fread(buffer, sizeof(char), main_db.page_size , output_file);
         fclose(output_file);
-        std::cout << std::endl;
+        //std::cout << "Test";
+        //std::cout <<  "?" <<std::endl;
+
     }
 }
 
@@ -98,7 +102,7 @@ void read_page(page_id page, char* buffer){
  */
 void write_page(page_id page,  char* buffer){
     //checks if the page asked for respect the max number of pages available
-    std::cout << std::endl;
+    //std::cout << std::endl;
     if (page.id >= main_db.max_pages_per_file) {
         err_message(4);
     } else {

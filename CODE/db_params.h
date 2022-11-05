@@ -12,6 +12,7 @@ typedef struct db_params{
     u_int16_t page_size; //usually limited to 4096 bytes
     char max_pages_per_file; //limited to 4 (in our case)
     u_int16_t frame_count;
+    u_int16_t total_nb_file;
 }db_params;
 
 
