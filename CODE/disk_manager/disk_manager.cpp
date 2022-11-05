@@ -31,7 +31,13 @@ page_id alloc_page(){
         file f = init_file(nb_file);
         main_db.total_nb_file++;
         file_list.push_back(f);
-        a_p_list = get_available_page_list();
+        //a_p_list = get_available_page_list();
+        for (int i = 0; i<main_db.max_pages_per_file;++i){
+            page_id page;
+            page.file_id = f.id; //sets the id of the file for the page
+            page.id = i; // sets the id of the page (ranging from 0 to 3) => 4 pages maximum
+            a_p_list.push_back(page);
+        }
     }
     //returns the first page available
     page_id page;
@@ -85,10 +91,13 @@ void read_page(page_id page, char* buffer){
         //opens the file in binary mode
         FILE* output_file = NULL;
         char* path = f_path.data();
-        output_file = fopen(path,"rb");
-        fseek(output_file, page.id * main_db.page_size,SEEK_SET);
-        fread(buffer, sizeof(char), main_db.page_size , output_file);
-        fclose(output_file);
+        output_file = fopen(path,"r+b");
+        if (output_file != NULL) {
+            long offset = (long) page.id * (long) main_db.page_size;
+            fseek(output_file, offset, SEEK_SET);
+            fread(buffer, sizeof(char), main_db.page_size, output_file);
+            fclose(output_file);
+        }
         //std::cout << "Test";
         //std::cout <<  "?" <<std::endl;
 
@@ -111,9 +120,17 @@ void write_page(page_id page,  char* buffer){
         //opens the file in binary mode
         FILE* output_file;
         char* path = f_path.data();
-        output_file = fopen(path,"w+b");
-        fseek(output_file, page.id * main_db.page_size,SEEK_SET);
-        fwrite(buffer, sizeof(char), main_db.page_size ,output_file);
+        output_file = fopen(path,"r+b");
+        if (output_file != NULL){
+            long offset = (long)page.id*(long)main_db.page_size;
+            fseek(output_file, offset, SEEK_SET);
+            fwrite(buffer, sizeof(char), main_db.page_size ,output_file);
+        } else {
+            output_file = fopen(path, "w+b");
+            long offset = (long)page.id*(long)main_db.page_size;
+            fseek(output_file, offset, SEEK_SET);
+            fwrite(buffer, sizeof(char), main_db.page_size ,output_file);
+        }
         fclose(output_file);
     }
 }

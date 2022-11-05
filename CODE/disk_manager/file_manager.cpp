@@ -135,6 +135,7 @@ void save_nb_file(void){
     char* path = f_path.data();
     output_file = fopen(path,"w");
     fprintf(output_file,"%d",main_db.total_nb_file);
+    //fprintf(output_file,"%d",0);
     //putw(main_db.total_nb_file,output_file);
     fclose(output_file);
 }
