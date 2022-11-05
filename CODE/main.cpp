@@ -27,6 +27,7 @@ int main(int argc, char **argv){
     main_db.page_size = PAGE_SIZE;
     main_db.max_pages_per_file = MAX_PAGES_PER_FILE;
     main_db.frame_count = MAX_FRAME_COUNT;
+    printf("DEBUG");
     main_db.total_nb_file = get_nb_file();
     //loads the file list
     file_list = get_file_list();

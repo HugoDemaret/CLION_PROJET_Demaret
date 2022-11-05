@@ -17,7 +17,8 @@
 #include "filelist.h"
 #include "../global.h"
 
-
+const char* FILE_S_IN = "{%[^,],%d,%d}";
+const char* FILE_S_OUT = "{%s,%d,%d}";
 
 
 
@@ -29,6 +30,31 @@
 //faster than checking every file in the DB, but if the file gets deleted, then we are doomed :
 //implement an alternative method to rebuild the file ? (maybe after if i'm not already dead/strongly deficient bc of c++)
 std::vector<file> get_file_list(void){
+
+    std::vector<file> f_list;
+/*
+    std::string f_path = main_db.db_paths + "fileslist.schema";
+    FILE* output_file;
+    char* path = f_path.data();
+    output_file = fopen(path,"r");
+    if (output_file != NULL) {
+        for (int i = 0; i < main_db.total_nb_file; ++i) {
+            file f;
+            char occupied[MAX_PAGES_PER_FILE];
+            fscanf(output_file, FILE_S_IN,  occupied, &f.nb_occupied, &f.id);
+            for (int i = 0; i<MAX_PAGES_PER_FILE; ++i){
+                f.page_occupied[i] = (occupied[i] == '1');
+            }
+            f_list.push_back(f);
+        }
+        fclose(output_file);
+    }
+*/
+    return f_list;
+
+
+
+    /*
     //std::cout << main_db.db_paths << " here" << std::endl;
     //std::cout << f_path << std::endl;
     std::string f_path = main_db.db_paths + "fileslist.schema";
@@ -64,25 +90,29 @@ std::vector<file> get_file_list(void){
 }
 
 void save_file_list(void){
+    /*
     std::string f_path = main_db.db_paths + "fileslist.schema";
     std::ofstream fout(f_path, std::ios::out | std::ios::binary);
     fout.write((char*)&file_list[0], file_list.size() * sizeof(file));
     fout.close();
+    */
     /*
-    char* path = f_path.data();
+    printf("DEBUG");
+    std::string f_path = main_db.db_paths + "fileslist.schema";
     FILE* output_file;
-    output_file = fopen(path,"w+");
-    if (output_file == NULL){
-        err_message(3);
-        exit(0);
+    char* path = f_path.data();
+
+    output_file = fopen(path,"w");
+    if (output_file != NULL) {
+        for (auto f : file_list) {
+            char occupied[MAX_PAGES_PER_FILE];
+            for (int i = 0; i<MAX_PAGES_PER_FILE; ++i){
+                occupied[i] = f.page_occupied[i] ? '1' : '0';
+            }
+            fprintf(output_file, FILE_S_OUT, occupied, f.nb_occupied, f.id);
+        }
+        fclose(output_file);
     }
-    file buffer[file_list.size()];
-    std::copy(file_list.begin(), file_list.end(), buffer);
-    rewind(output_file);
-    fwrite(buffer, sizeof(file), file_list.size(), output_file);
-    fwrite(buffer, 1, sizeof(buffer), output_file);
-    fclose(output_file);
-    //free(buffer);
     */
 }
 
@@ -113,7 +143,7 @@ file init_file(uint16_t id){
     std::string str = std::to_string(id);
     file f;
     f.id = id;
-    f.size = 0;
+    //f.size = 0;
     f.nb_occupied = 0;
     for (int i=0; i<4; ++i){
         f.page_occupied[i] = false;

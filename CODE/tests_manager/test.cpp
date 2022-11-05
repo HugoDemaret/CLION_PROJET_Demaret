@@ -12,7 +12,7 @@
 #include "test.h"
 #include "../global.h"
 
-#define TESTNBPAGE 5
+#define TESTNBPAGE 3
 
 void test_disk_manager(){
     page_id pages[TESTNBPAGE];
@@ -37,6 +37,10 @@ void test_disk_manager(){
     for (int i = 0; i<TESTNBPAGE; ++i){
         write_page(pages[i], buffer);
     }
+
+
+    save_file_list();
+
     /*
     printf("%d,%d",pages[5].file_id,pages[3].id);
     write_page(pages[3],buff);
