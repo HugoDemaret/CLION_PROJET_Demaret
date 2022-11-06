@@ -22,5 +22,6 @@ void free_page(page_id page, bool dirty);
 void flush_all();
 void init_frames();
 void free_buffer(char** buffer);
+void free_frames();
 
 #endif //PROJET_BDDA_DEMARET_BUFFER_MANAGER_H

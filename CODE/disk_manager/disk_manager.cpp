@@ -132,6 +132,7 @@ void write_page(page_id page,  char* buffer){
             fwrite(buffer, sizeof(char), main_db.page_size ,output_file);
         }
         fclose(output_file);
+        fflush(output_file);
     }
 }
 

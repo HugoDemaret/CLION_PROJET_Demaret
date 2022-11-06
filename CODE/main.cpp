@@ -36,13 +36,14 @@ int main(int argc, char **argv){
     init_pages();
     //
     if (DEBUG){
-        test_disk_manager();
-        //test_buffer_manager();
+        //test_disk_manager();
+        test_buffer_manager();
     }
     std::cout << "DBMS" << std::endl;
     //starts the shell
     shell_runner();
     save_file_list();
     save_nb_file();
+    free_frames();
     return 0;
 }

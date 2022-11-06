@@ -16,13 +16,13 @@ std::list<frame> empty_frame_list;
  */
 char* get_page(page_id page){
     //if frames are not occupied
-    printf("Debug1");
+    //printf("Debug1");
     if (frame_list.empty()){
-        printf("Debug2");
+        printf("EMPTY FRAME\n");
         frame f = empty_frame_list.back();
 
         empty_frame_list.pop_back();
-//BUG in read_page
+
         read_page(page, f.buffer);
 
         f.pin_count++;
@@ -31,6 +31,7 @@ char* get_page(page_id page){
         return f.buffer;
     }
     if (frame_list.size() < main_db.frame_count){
+        printf("NOT EMPTY FRAME BUT LESS\n");
         bool in = false;
         for (auto it = frame_list.begin(); it != frame_list.end() && !in; ++it) {
             if (it->second.file_id == page.file_id && it->second.id == page.id) {
@@ -48,6 +49,7 @@ char* get_page(page_id page){
         return f.buffer;
     }
     //LRU :
+    printf("LRU\n");
     frame f = frame_list.front().first;
     frame_list.pop_front();
     read_page(page, f.buffer);
@@ -71,6 +73,10 @@ void free_page(page_id page, bool dirty){
     }
 }
 
+/**
+ * Frees a buffer and sets it to NULL
+ * @param buffer
+ */
 void free_buffer(char* buffer){
     if (buffer != NULL){
         free(buffer);
@@ -89,15 +95,7 @@ void flush_all(){
         }
         it.first.pin_count =0;
         it.first.dirt = false;
-        //free(it.first.buffer);
-        /*
-        if (it.first.buffer != NULL){
-            free(it.first.buffer);
-        }
-         */
-        //delete it.first.buffer;
-        //it.first.buffer = NULL;
-        free_buffer(it.first.buffer);
+
     }
     for (auto & it:empty_frame_list){
         if (it.dirt){
@@ -105,18 +103,21 @@ void flush_all(){
         }
         it.pin_count = 0;
         it.dirt = false;
-        //free(it.buffer);
-        /*
-        if (it.buffer != NULL){
-            free(it.buffer);
-        }
-         */
-        //delete it.buffer;
-        //it.buffer = NULL;
-        free_buffer(it.buffer);
     }
 }
 
+
+/**
+ * Frees all the frames (buffers)
+ */
+void free_frames(){
+    for (auto & it:empty_frame_list){
+        free_buffer(it.buffer);
+    }
+    for (auto & it:frame_list){
+        free_buffer(it.first.buffer);
+    }
+}
 
 
 /**
@@ -127,9 +128,6 @@ void init_frames(){
 
         char *buffer = NULL;
         buffer = (char*) calloc(main_db.page_size, sizeof (char));
-
-        //char* buffer = new char[main_db.page_size]();
-        //char buffer[PAGE_SIZE];
         frame f;
         f.buffer = buffer;
         f.pin_count = 0;

@@ -149,5 +149,16 @@ file init_file(uint16_t id){
     for (int i=0; i<4; ++i){
         f.page_occupied[i] = false;
     }
+
+    std::string f_path = main_db.db_paths + "F" + str + ".bdda";
+    //opens the file in binary mode
+    FILE* output_file;
+    char* path = f_path.data();
+    output_file = fopen(path,"r+b");
+    if (output_file == NULL){
+        output_file = fopen(path,"w+b");
+    }
+    fclose(output_file);
+
     return f;
 }
