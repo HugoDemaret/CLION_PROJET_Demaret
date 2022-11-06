@@ -125,14 +125,16 @@ void write_page(page_id page,  char* buffer){
             long offset = (long)page.id*(long)main_db.page_size;
             fseek(output_file, offset, SEEK_SET);
             fwrite(buffer, sizeof(char), main_db.page_size ,output_file);
+            fflush(output_file);
         } else {
             output_file = fopen(path, "w+b");
             long offset = (long)page.id*(long)main_db.page_size;
             fseek(output_file, offset, SEEK_SET);
             fwrite(buffer, sizeof(char), main_db.page_size ,output_file);
+            fflush(output_file);
         }
         fclose(output_file);
-        fflush(output_file);
+
     }
 }
 

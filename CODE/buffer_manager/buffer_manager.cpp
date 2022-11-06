@@ -69,6 +69,9 @@ void free_page(page_id page, bool dirty){
         if (it.second.id == page.id && it.second.file_id == page.file_id){
             it.first.pin_count--;
             it.first.dirt = dirty;
+            if (dirty){
+                write_page(page,it.first.buffer);
+            }
         }
     }
 }
