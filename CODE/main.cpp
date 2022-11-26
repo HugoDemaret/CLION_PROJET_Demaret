@@ -17,7 +17,8 @@
 db_params main_db;
 //CREATES NEW FILE LIST "f_list"
 std::vector<file> file_list;
-
+//CREATES THE CATALOG
+catalog main_catalog;
 
 
 

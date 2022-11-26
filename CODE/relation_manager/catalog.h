@@ -9,9 +9,9 @@
 #include "relation_info.h"
 
 
-typedef struct catalog{
+typedef struct catalog {
     u_int nb_relation;
-    relation *relations;
-}catalog;
+    vector<catalog> catalog_list;
+} catalog;
 
 #endif //PROJET_BDDA_DEMARET_CATALOG_H

@@ -16,10 +16,14 @@
 #include "disk_manager/disk_manager.h"
 #include "disk_manager/file.h"
 #include "buffer_manager/buffer_manager.h"
-
+#include "relation_manager/catalog.h"
+#include "relation_manager/relation_info.h"
+#include "relation_manager/relation_info.h"
+#include "relation_manager/column_info.h"
 
 
 extern db_params main_db;
+extern catalog main_catalog;
 
 #define DEBUG 1
 #define PAGE_SIZE 4
