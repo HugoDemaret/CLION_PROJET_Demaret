@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hugodemaret/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/hugodemaret/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET
+CMAKE_SOURCE_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-bui
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/hugodemaret/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/hugodemaret/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/CMakeFiles /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hugodemaret/CLionProjects/Projet_BDDA_DEMARET/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugodemaret/Desktop/Coralie/Dev/Rust/CLION_PROJET_Demaret/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -331,6 +331,33 @@ CODE/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/main.cpp.s
 .PHONY : CODE/main.cpp.s
 
+CODE/relation_manager/catalog_manager.o: CODE/relation_manager/catalog_manager.cpp.o
+
+.PHONY : CODE/relation_manager/catalog_manager.o
+
+# target to build an object file
+CODE/relation_manager/catalog_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/relation_manager/catalog_manager.cpp.o
+.PHONY : CODE/relation_manager/catalog_manager.cpp.o
+
+CODE/relation_manager/catalog_manager.i: CODE/relation_manager/catalog_manager.cpp.i
+
+.PHONY : CODE/relation_manager/catalog_manager.i
+
+# target to preprocess a source file
+CODE/relation_manager/catalog_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/relation_manager/catalog_manager.cpp.i
+.PHONY : CODE/relation_manager/catalog_manager.cpp.i
+
+CODE/relation_manager/catalog_manager.s: CODE/relation_manager/catalog_manager.cpp.s
+
+.PHONY : CODE/relation_manager/catalog_manager.s
+
+# target to generate assembly for a file
+CODE/relation_manager/catalog_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_BDDA_DEMARET.dir/build.make CMakeFiles/Projet_BDDA_DEMARET.dir/CODE/relation_manager/catalog_manager.cpp.s
+.PHONY : CODE/relation_manager/catalog_manager.cpp.s
+
 CODE/string_converter/case_modifier.o: CODE/string_converter/case_modifier.cpp.o
 
 .PHONY : CODE/string_converter/case_modifier.o
@@ -442,6 +469,9 @@ help:
 	@echo "... CODE/main.o"
 	@echo "... CODE/main.i"
 	@echo "... CODE/main.s"
+	@echo "... CODE/relation_manager/catalog_manager.o"
+	@echo "... CODE/relation_manager/catalog_manager.i"
+	@echo "... CODE/relation_manager/catalog_manager.s"
 	@echo "... CODE/string_converter/case_modifier.o"
 	@echo "... CODE/string_converter/case_modifier.i"
 	@echo "... CODE/string_converter/case_modifier.s"
