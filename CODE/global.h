@@ -12,6 +12,8 @@
 #include <list>
 #include <utility>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "db_params.h"
 #include "disk_manager/disk_manager.h"
 #include "disk_manager/file.h"
@@ -20,6 +22,7 @@
 #include "relation_manager/relation_info.h"
 #include "relation_manager/relation_info.h"
 #include "relation_manager/column_info.h"
+#include "utils/util.h"
 
 
 extern db_params main_db;

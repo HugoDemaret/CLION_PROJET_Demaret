@@ -5,10 +5,16 @@
 #ifndef PROJET_BDDA_DEMARET_COLUMN_INFO_H
 #define PROJET_BDDA_DEMARET_COLUMN_INFO_H
 
+enum coltype {none, INTEGER, REAL, VARCHAR};
+
 typedef struct column{
     std::string column_name;
-    union column_type {
-        char* type = {"INTEGER", "REAL" ,"VARCHAR(T)"};
+    uint8_t size;
+    enum coltype type;
+    union {
+        int n;
+        float f;
+        char* s;
     };
 }column;
 
